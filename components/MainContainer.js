@@ -8,7 +8,6 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import Cart from "./../pages/Cart";
 
 import HomeStackNavigator from "./HomeStackNavigator";
-import Login from "./Login";
 import LoginStackNavigator from "./LoginStackNavigator";
 
 const Tab = createBottomTabNavigator();
