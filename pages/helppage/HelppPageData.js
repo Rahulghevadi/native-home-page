@@ -1,4 +1,4 @@
-const questions = [
+const HelpData = [
   {
     id: 1,
     question:
@@ -32,4 +32,4 @@ const questions = [
       "We take security very seriously at vegges. If you have found an issue on vegges, you can report it to security@vegges.com with the below details:1. Steps to reproduce the bug/issue 2. Your web browser/mobile browser's name and version3. Screenshot/screencast (if any).",
   },
 ];
-export default questions;
+export default HelpData;

@@ -35,7 +35,6 @@ const Aboutus = () => {
                 THE VEGGIES
               </Text>
             </View>
-
             <View>
               <Image
                 source={Truck}
@@ -45,152 +44,166 @@ const Aboutus = () => {
                 }}
               />
             </View>
+            {/* our mission */}
             <View>
-              <Text
-                style={{
-                  fontSize: 20,
-                  fontWeight: "bold",
-                  color: "#D73762",
-                  padding: 5,
-                }}
-              >
-                Our Mission
-              </Text>
-            </View>
-            <View>
-              <Text style={{ fontSize: 15, padding: 10 }}>
-                To delivery the fresh vegetables and Fruits to the Costumers
-                directly by the former
-              </Text>
-            </View>
-            <View>
-              <Text
-                style={{
-                  fontSize: 20,
-                  fontWeight: "bold",
-                  color: "#D73760",
-                  padding: 5,
-                }}
-              >
-                Steps to Follow
-              </Text>
-            </View>
-            <View
-              style={{
-                padding: 5,
-              }}
-            >
-              <Text style={styles.steps}>
-                1.<Text style={styles.highLight}> Login/Signup</Text> to the
-                Veggies
-              </Text>
-              <Text style={styles.steps}>
-                2.Select the Items from the catogeries{" "}
-                <Text style={styles.highLight}> fruits</Text> and
-                <Text style={styles.highLight}> vegetables</Text>
-              </Text>
-              <Text style={styles.steps}>
-                3.Now place the <Text style={styles.highLight}> order</Text>{" "}
-              </Text>
-              <Text style={styles.steps}>
-                4. Finally a make{" "}
-                <Text style={styles.highLight}> payment </Text> through Debit
-                Card or COD
-              </Text>
-            </View>
-
-            <View>
-              <Text
-                style={{
-                  fontSize: 20,
-                  fontWeight: "bold",
-                  color: "#D73762",
-                  padding: 5,
-                  textAlign: "center",
-                }}
-              >
-                contact us
-              </Text>
-            </View>
-            <View style={styles.contact}>
               <View>
-                <Text style={styles.InputHighLight}>Email :</Text>
-                <TextInput
-                  style={styles.input}
-                  mode="outlined"
-                  label="Enter Email"
-                  style={{ marginLeft: 0 }}
-                />
-              </View>
-              <View>
-                <Text style={styles.InputHighLight}>Message :</Text>
-                <TextInput
-                  style={styles.input}
-                  mode="outlined"
-                  label="Enter Message"
-                  style={{ height: 150, marginLeft: 0 }}
-                />
-              </View>
-              <View>
-                <Button
+                <Text
                   style={{
-                    margin: 10,
-                    backgroundColor: "#005114",
-                    marginLeft: 0,
+                    fontSize: 20,
+                    fontWeight: "bold",
+                    color: "#D73762",
+                    padding: 5,
                   }}
-                  mode="contained"
                 >
-                  Submit
-                </Button>
+                  Our Mission
+                </Text>
+              </View>
+              <View>
+                <Text style={{ fontSize: 15, padding: 10 }}>
+                  To delivery the fresh vegetables and Fruits to the Costumers
+                  directly by the former
+                </Text>
               </View>
             </View>
 
+            {/* steps to follow */}
             <View>
-              <Text
+              <View>
+                <Text
+                  style={{
+                    fontSize: 20,
+                    fontWeight: "bold",
+                    color: "#D73760",
+                    padding: 5,
+                  }}
+                >
+                  Steps to Follow
+                </Text>
+              </View>
+              <View
                 style={{
-                  fontSize: 20,
-                  fontWeight: "bold",
-                  color: "#D73762",
                   padding: 5,
                 }}
               >
-                Follow us on
-              </Text>
+                <Text style={styles.steps}>
+                  1.<Text style={styles.highLight}> Login/Signup</Text> to the
+                  Veggies
+                </Text>
+                <Text style={styles.steps}>
+                  2.Select the Items from the catogeries{" "}
+                  <Text style={styles.highLight}> fruits</Text> and
+                  <Text style={styles.highLight}> vegetables</Text>
+                </Text>
+                <Text style={styles.steps}>
+                  3.Now place the <Text style={styles.highLight}> order</Text>{" "}
+                </Text>
+                <Text style={styles.steps}>
+                  4. Finally a make{" "}
+                  <Text style={styles.highLight}> payment </Text> through Debit
+                  Card or COD
+                </Text>
+              </View>
             </View>
 
-            <View
-              style={{
-                flexDirection: "row",
-                padding: 10,
-                justifyContent: "space-around",
-                backgroundColor: "#f6f6f6",
-              }}
-            >
-              <Pressable>
-                <Ionicons
-                  name="logo-facebook"
-                  style={{ color: "#4267B2", fontSize: 30 }}
-                />
-              </Pressable>
-              <Pressable>
-                <Ionicons
-                  name="logo-instagram"
-                  style={styles.icons}
-                  style={{ color: "#8a3ab9", fontSize: 30 }}
-                />
-              </Pressable>
-              <Pressable>
-                <Ionicons
-                  name="logo-twitter"
-                  style={{ color: "#1DA1F2", fontSize: 30 }}
-                />
-              </Pressable>
-              <Pressable>
-                <Ionicons
-                  name="logo-github"
-                  style={{ color: "#333", fontSize: 30 }}
-                />
-              </Pressable>
+            {/* Contact us */}
+
+            <View>
+              <View>
+                <Text
+                  style={{
+                    fontSize: 20,
+                    fontWeight: "bold",
+                    color: "#D73762",
+                    padding: 5,
+                    textAlign: "center",
+                  }}
+                >
+                  contact us
+                </Text>
+              </View>
+              <View style={styles.contact}>
+                <View>
+                  <Text style={styles.InputHighLight}>Email :</Text>
+                  <TextInput
+                    style={styles.input}
+                    mode="outlined"
+                    label="Enter Email"
+                    style={{ marginLeft: 0 }}
+                  />
+                </View>
+                <View>
+                  <Text style={styles.InputHighLight}>Message :</Text>
+                  <TextInput
+                    style={styles.input}
+                    mode="outlined"
+                    label="Enter Message"
+                    multiline={true}
+                    numberOfLines={4}
+                    style={{ height: 150, marginLeft: 0 }}
+                  />
+                </View>
+                <View>
+                  <Button
+                    style={{
+                      margin: 10,
+                      backgroundColor: "#005114",
+                      marginLeft: 0,
+                    }}
+                    mode="contained"
+                  >
+                    Submit
+                  </Button>
+                </View>
+              </View>
+            </View>
+            {/* Follow us on */}
+            <View>
+              <View>
+                <Text
+                  style={{
+                    fontSize: 20,
+                    fontWeight: "bold",
+                    color: "#D73762",
+                    padding: 5,
+                  }}
+                >
+                  Follow us on
+                </Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: "row",
+                  padding: 10,
+                  justifyContent: "space-around",
+                  backgroundColor: "#f6f6f6",
+                }}
+              >
+                <Pressable>
+                  <Ionicons
+                    name="logo-facebook"
+                    style={{ color: "#4267B2", fontSize: 30 }}
+                  />
+                </Pressable>
+                <Pressable>
+                  <Ionicons
+                    name="logo-instagram"
+                    style={styles.icons}
+                    style={{ color: "#8a3ab9", fontSize: 30 }}
+                  />
+                </Pressable>
+                <Pressable>
+                  <Ionicons
+                    name="logo-twitter"
+                    style={{ color: "#1DA1F2", fontSize: 30 }}
+                  />
+                </Pressable>
+                <Pressable>
+                  <Ionicons
+                    name="logo-github"
+                    style={{ color: "#333", fontSize: 30 }}
+                  />
+                </Pressable>
+              </View>
             </View>
           </View>
         </ScrollView>
